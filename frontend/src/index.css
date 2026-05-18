@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 bg-slate-950;
+    background:
+      radial-gradient(circle at top left, rgba(59, 130, 246, 0.22), transparent 28%),
+      radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 26%),
+      linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border border-white/30 bg-white/10 text-white px-6 py-3 rounded-lg font-semibold backdrop-blur-md transition-all duration-300 hover:bg-white/20;
+  }
+
+  .glass-panel {
+    @apply border border-white/20 bg-white/15 backdrop-blur-xl shadow-2xl;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+}
