@@ -113,6 +113,7 @@ upskillcampus/
 - Connect to MongoDB Atlas or your preferred DB.
 - Use Vercel/Netlify for frontend (React/Vite) and any Node-friendly host for backend (Heroku, AWS, Render).
 - Configure CORS and environment variables as required.
+- Url:- https://upskillcampus.vercel.app
 
 ## 🧪 Testing
 
